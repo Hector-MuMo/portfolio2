@@ -2,8 +2,10 @@ name: Deployment Pipeline
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize]
 
 jobs:
   deploy:
@@ -20,4 +22,5 @@ jobs:
       - name: Test
         run: npm run test
       - name: Build project
+        if: ${{ github.event_name == 'push' }}
         run: npm run build
