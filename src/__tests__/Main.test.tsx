@@ -4,6 +4,6 @@ import Main from '../components/Main';
 
 test("check start project string", () => {
     render(<Main />)
-    const text = screen.getByText("Se comienza el proyecto")
+    const text = screen.getByText("Home")
     expect(text).toBeInTheDocument()
 })
