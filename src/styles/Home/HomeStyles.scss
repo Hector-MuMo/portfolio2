@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+section {
+    height: 100vh;
+}
+
+.hero-container {
+    position: relative;
+    height: 100%;
+    background-image: url(../../images/code-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    text-align: center;
+}
+
+.typewriter-container {
+    margin-top: 50px;
+    height: 350px;
+}
+
+.typewrite-styles {
+    font-size: $h1-header;
+    color: $ligth-dark;
+}
+
+.cursor-typewrite-style {
+    font-size: $h1-header;
+    color: $ligth-dark;
+}
+
+.hero-text>button {
+    margin-top: 20px;
+}

@@ -1,0 +1,58 @@
+section {
+  height: 100vh;
+}
+
+.hero-container {
+  position: relative;
+  height: 100%;
+  background-image: url(../../images/code-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+  text-align: center;
+}
+
+.typewriter-container {
+  margin-top: 50px;
+  height: 350px;
+}
+
+.typewrite-styles {
+  font-size: 32px;
+  color: #3C3C3C;
+}
+
+.cursor-typewrite-style {
+  font-size: 32px;
+  color: #3C3C3C;
+}
+
+.hero-text > button {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=HomeStyles.css.map */
