@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    width: 90%;
+}
+
+.fading {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    border-radius: 25px;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.fading img {
+    position: absolute;
+    left: 0;
+}
+
+@keyframes FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fading img.imgTop {
+    animation-name: FadeInOut;
+    -webkit-animation-name: FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+.profile-container>p {
+    width: 80%;
+    text-align: justify;
+}
+
+.profile-container .profile-intro {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: $h3-header;
+}

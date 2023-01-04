@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 const Home = () => {
     return (
-        <section>
+        <div style={{ height: "100vh" }}>
             <div className='hero-container'>
                 <div className='hero-text'>
                     <div className='typewriter-container'>
@@ -18,10 +18,10 @@ const Home = () => {
                             }}
                         />
                     </div>
-                    <button>Profile</button>
+                    <button><a href="#profile">Profile</a></button>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
