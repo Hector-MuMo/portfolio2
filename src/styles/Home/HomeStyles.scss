@@ -1,9 +1,5 @@
 @import '../../styles/variables';
 
-section {
-    height: 100vh;
-}
-
 .hero-container {
     position: relative;
     height: 100%;
@@ -41,4 +37,9 @@ section {
 
 .hero-text>button {
     margin-top: 20px;
+}
+
+.hero-text>button a {
+    color: $white;
+    text-decoration: none;
 }

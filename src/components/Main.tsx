@@ -1,20 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Home from './Home'
 import { slide as Menu } from 'react-burger-menu'
-import SocialMediaMenu from './SocialMediaMenu'
+import Profile from './Profile'
+import Skills from './Skills'
 
 const Main = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const isMenuOpen = (state: any) => {
+        setIsOpen(state.isOpen)
+    }
+
+    const handleClose = () => {
+        console.log(isOpen);
+        if (isOpen)
+            return setIsOpen(false)
+    }
+
     return (
         <div >
-            <Menu>
-                <a id="home" href="/">Home</a>
-                <a id="profile" href="/">Profile</a>
-                <a id="skills" href="/">Skills</a>
-                <a id="portfolio" href="/">Portfolio</a>
-                <a id="Contact" href="/">Contact</a>
+            <Menu onStateChange={isMenuOpen} isOpen={isOpen}>
+                <a href="#top" onClick={handleClose}>Home</a>
+                <a href="#profile" onClick={handleClose}>Profile</a>
+                <a href="#skills" onClick={handleClose}>Skills</a>
+                <a href="#portfolio" onClick={handleClose}>Portfolio</a>
+                <a href="#contact" onClick={handleClose}>Contact</a>
             </Menu>
-            <SocialMediaMenu />
             <Home />
+            <Profile />
+            <Skills />
         </div>
     )
 }
