@@ -4,9 +4,7 @@ import { SiGmail } from "react-icons/si"
 import "../styles/SocialMediaMenu/SocialMediaMenu.css"
 
 const SocialMediaMenu = () => {
-
     const [isVisible, setIsVisible] = useState(true);
-    const [height, setHeight] = useState(0)
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
@@ -14,15 +12,10 @@ const SocialMediaMenu = () => {
             window.removeEventListener("scroll", listenToScroll);
     }, [])
 
-    useEffect(() => {
-        console.log(height)
-    }, [height]);
-
     const listenToScroll = () => {
         let heightToHideFrom = 3100;
         const winScroll = document.body.scrollTop ||
             document.documentElement.scrollTop;
-        setHeight(winScroll);
 
         if (winScroll > heightToHideFrom) {
             setIsVisible(false);
