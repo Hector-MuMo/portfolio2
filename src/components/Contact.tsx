@@ -4,11 +4,24 @@ import wp from "../images/wp.png"
 import linkedIn from "../images/linkedIn.png"
 import gmail from "../images/gmail.png"
 import cv from "../images/cv.png"
-import "../utils/HectorCV-151122.pdf"
 
 const Contact = () => {
+    const handleClick = () => {
+        fetch('HectorCV.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'HectorCV.pdf';
+                alink.click();
+            })
+        })
+    }
+
     return (
-        <section>
+        <section >
             <h2 id="contact">Contact</h2>
             <div className='title-divider'></div>
             <div className='contact-container'>
@@ -22,9 +35,9 @@ const Contact = () => {
                 <a target="_blank" rel='noreferrer' href="https://mail.google.com/mail/?view=cm&fs=1&to=munozmoraleshector@gmail.com&su=Project%20Idea" className='contact-ws'>
                     <img src={gmail} alt='gmail' />
                 </a>
-                <a href="../utils/HectorCV-151122.pdf" download="Hector-MM-CV.pdf" className='contact-ws'>
+                <figure onClick={handleClick} className='contact-ws' >
                     <img src={cv} alt='gmail' />
-                </a>
+                </figure>
             </div>
         </section>
     )

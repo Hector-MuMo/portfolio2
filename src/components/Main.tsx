@@ -33,6 +33,9 @@ const Main = () => {
             <Skills />
             <Portfolio />
             <Contact />
+            <footer className='last-section'>
+                <small>Copyright 2023</small>
+            </footer>
         </div>
     )
 }

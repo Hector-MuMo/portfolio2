@@ -7,9 +7,6 @@ interface SkillsCarouselProps {
 
 const SkillsCarousel = ({ imageArray }: SkillsCarouselProps) => {
 
-    console.log(imageArray.length)
-    console.log(imageArray)
-
     const images = imageArray.map((value, index) => {
         return <figure className={`front-card card${index + 1}`} style={{ animationDuration: `${imageArray.length}s` }}>
             <img src={value} alt={`pic${index}`} />

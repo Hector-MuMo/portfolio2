@@ -191,4 +191,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
   border-radius: 10px;
   margin: 20px 0 20px 0;
 }
+
+.last-section {
+  margin-top: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  background-color: #77CCC8;
+}
 /*# sourceMappingURL=Index.css.map */

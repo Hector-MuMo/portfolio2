@@ -186,3 +186,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     border-radius: 10px;
     margin: 20px 0 20px 0;
 }
+
+.last-section {
+    margin-top: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dark;
+    background-color: $tl-main-ligth;
+}
