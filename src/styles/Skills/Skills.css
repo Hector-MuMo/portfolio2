@@ -118,4 +118,44 @@
     -moz-animation-delay: -1s;
     animation-delay: -1s; */
 }
+
+.soft-container {
+  padding: 30px 0;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (100px)[4];
+      grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+}
+
+.soft-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.soft-container > figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0;
+  overflow: hidden;
+}
 /*# sourceMappingURL=Skills.css.map */

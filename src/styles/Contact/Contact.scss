@@ -1,0 +1,20 @@
+.contact-container {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px 0;
+}
+
+.contact-msg {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+.contact-ws {
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+}

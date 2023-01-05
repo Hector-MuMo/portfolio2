@@ -3,6 +3,8 @@ import Home from './Home'
 import { slide as Menu } from 'react-burger-menu'
 import Profile from './Profile'
 import Skills from './Skills'
+import Portfolio from './Portfolio'
+import Contact from './Contact'
 
 const Main = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +31,8 @@ const Main = () => {
             <Home />
             <Profile />
             <Skills />
+            <Portfolio />
+            <Contact />
         </div>
     )
 }
