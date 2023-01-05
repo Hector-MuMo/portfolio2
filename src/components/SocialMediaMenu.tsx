@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
 import "../styles/SocialMediaMenu/SocialMediaMenu.css"
 
 const SocialMediaMenu = () => {
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenToScroll);
+        return () =>
+            window.removeEventListener("scroll", listenToScroll);
+    }, [])
+
+    const listenToScroll = () => {
+        let heightToHideFrom = 3100;
+        const winScroll = document.body.scrollTop ||
+            document.documentElement.scrollTop;
+
+        if (winScroll > heightToHideFrom) {
+            setIsVisible(false);
+        } else {
+            setIsVisible(true);
+        }
+    };
 
     return (
-        <div style={{ position: 'absolute', height: "100%" }}>
+        <div style={isVisible ? {
+            position: 'absolute', height: "100%", transition: "left 1s ease", left: "0",
+        } : { position: 'absolute', height: "100%", left: "-100px", transition: "left 1s ease" }}>
             <div className='socialMediaMenu-container'>
                 <a target="_blank" rel='noreferrer' href="https://api.whatsapp.com/send?phone=522464594943">
                     <BsWhatsapp style={{ cursor: "pointer" }} />

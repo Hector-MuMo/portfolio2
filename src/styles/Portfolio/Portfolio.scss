@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.slider-container {
+    margin: 30px 0;
+    padding: 30px 0;
+    width: 80%;
+    height: auto;
+    border: 3px solid #2E7B78;
+    border-radius: 50px 0 50px 0;
+}
+
+.slide {
+    padding: 20px;
+    text-align: justify;
+}
