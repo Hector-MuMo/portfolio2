@@ -8,11 +8,15 @@
     width: 90%;
 }
 
+.dark-title {
+    color: $td-main-dark;
+}
+
 .fading {
     position: relative;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     margin: 0;
     border-radius: 25px;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.2);
@@ -49,11 +53,75 @@
 
 .profile-container>p {
     width: 80%;
+    margin: 5px 0;
     text-align: justify;
 }
 
-.profile-container .profile-intro {
+.dark-p {
+    color: $white;
+    width: 80%;
+    margin: 5px 0;
+    text-align: justify;
+}
+
+.profile-intro {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-size: $h3-header;
+}
+
+.dark-profile-intro {
+    color: $white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: $h3-header;
+}
+
+@media screen and (min-width: 800px) {
+    .profile-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 30px 0;
+        width: 95%;
+    }
+
+    .profile-container>.divider,
+    .dark-divider {
+        width: 2%;
+        height: 300px;
+        margin: 0 20px;
+    }
+
+    .fading {
+        width: 1000px;
+        height: 200px;
+    }
+
+    .profile-container {
+        p {
+            height: 300px;
+            overflow: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .profile-container {
+        width: 90%;
+    }
+
+    .fading {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .profile-container {
+        width: 70%;
+    }
+
+    .fading {
+        height: 250px;
+    }
 }
