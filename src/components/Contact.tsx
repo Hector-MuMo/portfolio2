@@ -1,11 +1,14 @@
-import React from 'react'
-import "../styles/Contact/Contact.css"
+import React, { useContext } from 'react'
+import { StateContext } from '../App'
 import wp from "../images/wp.png"
 import linkedIn from "../images/linkedIn.png"
 import gmail from "../images/gmail.png"
 import cv from "../images/cv.png"
+import "../styles/Contact/Contact.css"
 
 const Contact = () => {
+    const { isDarkTheme, isEnglishText } = useContext(StateContext)
+
     const handleClick = () => {
         fetch('HectorCV.pdf').then(response => {
             response.blob().then(blob => {
@@ -21,11 +24,21 @@ const Contact = () => {
     }
 
     return (
-        <section >
-            <h2 id="contact">Contact</h2>
+        <section className={isDarkTheme ? "dark-section" : ""}>
+            {
+                isEnglishText ?
+                    <h2 id="contact">Contact me</h2>
+                    :
+                    <h2 id="contact">Contactame</h2>
+            }
             <div className='title-divider'></div>
             <div className='contact-container'>
-                <p className='contact-msg'>Send me a message of check my CV</p>
+                {
+                    isEnglishText ?
+                        <p className={isDarkTheme ? "dark-contact-msg" : 'contact-msg'}>Send me a message or check my CV</p>
+                        :
+                        <p className={isDarkTheme ? "dark-contact-msg" : 'contact-msg'}>Envíame un mensaje o revisa mi CV</p>
+                }
                 <a target="_blank" rel='noreferrer' href="https://api.whatsapp.com/send?phone=522464594943" className='contact-ws'>
                     <img src={wp} alt='whatsapp' />
                 </a>

@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     //Dark Theme
     /* 
@@ -45,6 +46,16 @@ section {
     align-items: center;
     margin-top: 30px;
     background-color: $white;
+    border: 3px solid $tl-main-ligth;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.dark-section {
+    background-color: $ligth-dark;
+    border: 3px solid $td-main-light;
+    border-left: 0px;
+    border-right: 0px;
 }
 
 h1,
@@ -78,6 +89,15 @@ button {
     color: $white;
     font-size: $regular-text;
     font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.dark-button {
+    background-color: $td-main-dark;
+}
+
+.navBar-container {
+    display: none;
 }
 
 
@@ -99,7 +119,11 @@ button {
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-    background: $ligth-dark;
+    background: $tl-main-ligth;
+}
+
+.dark-menu {
+    background-color: $ligth-dark;
 }
 
 /* Position and sizing of clickable cross button */
@@ -187,12 +211,124 @@ Note: Beware of modifying this element as it can break the animations - you shou
     margin: 20px 0 20px 0;
 }
 
+.dark-divider {
+    background-color: $td-main-light;
+    backdrop-filter: blur(100px);
+    width: 80%;
+    height: 8px;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+}
+
 .last-section {
-    margin-top: 30px;
-    height: 30px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $dark;
-    background-color: $tl-main-ligth;
+    background-color: $ligth-grey;
+}
+
+.dark-last-section {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    background-color: $td-main-light;
+}
+
+//Settings Menu
+.settingsMenu-cotainer {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100px;
+    height: 70px;
+}
+
+.settingButton-container {
+    display: flex;
+
+    span {
+        font-size: $small-text;
+        color: $tl-main-dark;
+
+    }
+}
+
+.light-theme-icon {
+    font-size: $h2-header;
+    color: $tl-main-dark;
+    cursor: pointer;
+}
+
+.light-theme-icon:hover {
+    color: $tl-main-ligth;
+}
+
+.dark-theme-icon {
+    font-size: $h2-header;
+    color: $td-main-dark;
+    cursor: pointer;
+}
+
+.dark-theme-icon:hover {
+    color: $td-main-light;
+}
+
+
+@media screen and (min-width: 800px) {
+    .bm-burger-button {
+        display: none;
+    }
+
+    .navBar-container {
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        background-color: $tl-main-dark;
+        color: $white;
+
+
+    }
+
+    .logo-container {
+        width: 20%;
+    }
+
+    .menu-container {
+        width: 80%;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: 0;
+
+            li {
+                list-style: none;
+                padding: 8px 15px;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    font-size: $h3-header;
+                    padding: 8px 15px;
+                }
+            }
+
+            a:hover {
+                background-color: $white;
+                color: $tl-main-dark;
+
+            }
+        }
+    }
 }

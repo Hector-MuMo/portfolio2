@@ -16,7 +16,36 @@
     border-radius: 0 50px 50px 0;
 }
 
+.dark-socialMediaMenu-container {
+    width: 40px;
+    height: 200px;
+    z-index: 500;
+    position: sticky;
+    top: 200px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $white;
+    background-color: $td-main-dark;
+    border-radius: 0 50px 50px 0;
+}
+
 .socialMediaMenu-container>* {
     font-size: $h2-header;
     color: $white;
+}
+
+.dark-socialMediaMenu-container>* {
+    font-size: $h2-header;
+    color: $white;
+}
+
+@media screen and (min-width: 800px) {
+
+    .socialMediaMenu-container,
+    .dark-socialMediaMenu-container {
+        display: none;
+    }
 }

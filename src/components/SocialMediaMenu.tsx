@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs"
 import { SiGmail } from "react-icons/si"
+import { StateContext } from '../App'
 import "../styles/SocialMediaMenu/SocialMediaMenu.css"
 
 const SocialMediaMenu = () => {
     const [isVisible, setIsVisible] = useState(true);
+    const { isDarkTheme } = useContext(StateContext)
 
     useEffect(() => {
         window.addEventListener("scroll", listenToScroll);
@@ -27,8 +29,9 @@ const SocialMediaMenu = () => {
     return (
         <div style={isVisible ? {
             position: 'absolute', height: "100%", transition: "left 1s ease", left: "0",
-        } : { position: 'absolute', height: "100%", left: "-100px", transition: "left 1s ease" }}>
-            <div className='socialMediaMenu-container'>
+        } : { position: 'absolute', height: "100%", left: "-100px", transition: "left 1s ease" }}
+        >
+            <div className={isDarkTheme ? "dark-socialMediaMenu-container" : "socialMediaMenu-container"}>
                 <a target="_blank" rel='noreferrer' href="https://api.whatsapp.com/send?phone=522464594943">
                     <BsWhatsapp style={{ cursor: "pointer" }} />
                 </a>
