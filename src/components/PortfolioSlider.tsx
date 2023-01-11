@@ -4,6 +4,7 @@ import { StateContext } from '../App';
 import "../styles/Portfolio/Portfolio.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import fenicia from "../images/fenicia-1.png"
 import pokedex from "../images/Pokedex-react.png"
 import trivia from "../images/Triviando-vanilla.png"
 import quotes from "../images/Quotes-react.png"
@@ -59,6 +60,18 @@ const PortfolioSlider = () => {
                     <Slider {...settings}>
                         <div >
                             <figure className='slider-img' >
+                                <img src={fenicia} alt="" />
+                            </figure>
+                            <p style={{ textAlign: "justify", padding: "20px" }} className={isDarkTheme ? "dark-theme-text" : ""}>
+                                This is a real project where I working at. It is a e-commerce as a service, where you can add many online-stores like MercadoLibre, ClaroShop, Shopify, Amazon and others. Also you can admin the orders, products, inventory.
+                                This project is under construction and we use Typescript, React, Gatsby, TailwindCSS, AntDesign, NodeJs and MongoDB.
+                            </p>
+                            <a href="https://fullpokedexhmm.netlify.app/#/" target="_blank" rel="noreferrer" className={isDarkTheme ? "dark-a" : "light-a"}>
+                                Check Project
+                            </a>
+                        </div>
+                        <div >
+                            <figure className='slider-img' >
                                 <img src={pokedex} alt="" />
                             </figure>
                             <p style={{ textAlign: "justify", padding: "20px" }} className={isDarkTheme ? "dark-theme-text" : ""}>
@@ -105,6 +118,18 @@ const PortfolioSlider = () => {
                     </Slider>
                     :
                     <Slider {...settings}>
+                        <div >
+                            <figure className='slider-img' >
+                                <img src={fenicia} alt="" />
+                            </figure>
+                            <p style={{ textAlign: "justify", padding: "20px" }} className={isDarkTheme ? "dark-theme-text" : ""}>
+                                Este es un proyecto real en el que estoy trabajando. Es un e-commerce como serivicio donde puedes agregar varias tiendas en linea como MercadoLibre, ClaroShop, Shopify, Amazon, entre otras. Además de que se puede administrar las ordenes, los productos y el inventario.
+                                Este proyecto está en construcción y se usa Typescript, React, Gatsby, TailwindCSS, AntDesign, NodeJs y MongoDB.
+                            </p>
+                            <a href="https://app.fenicia.io" target="_blank" rel="noreferrer" className={isDarkTheme ? "dark-a" : "light-a"}>
+                                Revisa el proyecto
+                            </a>
+                        </div>
                         <div >
                             <figure className='slider-img' >
                                 <img src={pokedex} alt="" />

@@ -61,6 +61,20 @@ section {
   border-right: 0px;
 }
 
+.visible {
+  opacity: 1 !important;
+  -webkit-transform: translate(0, 0) !important;
+          transform: translate(0, 0) !important;
+}
+
+.fadeBottom {
+  opacity: 0;
+  -webkit-transform: translate(0, -15vh);
+          transform: translate(0, -15vh);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
 h1,
 h2,
 h3 {
@@ -227,7 +241,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .last-section {
-  height: 75px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -13,7 +13,7 @@ const Profile = () => {
         <>
             {
                 isEnglishText ?
-                    <section className={isDarkTheme ? "dark-section" : "section"}>
+                    <section className={isDarkTheme ? "scroll-content fadeBottom dark-section" : "scroll-content fadeBottom"}>
                         <h2 id="profile" className={isDarkTheme ? "dark-title" : ""}>Profile</h2>
                         <div className="title-divider"></div>
                         <p className={isDarkTheme ? "dark-profile-intro" : "profile-intro"}>Hi! I'm Hector Muñoz, and <span style={{ textDecoration: "underline" }}>I'm ready for challenges.</span> </p>
@@ -23,8 +23,8 @@ const Profile = () => {
                             </p>
                             <div className={isDarkTheme ? "dark-divider" : "divider"} ></div>
                             <figure className='fading'>
-                                <img className='imgBottom' src={Photo3} alt="yo Y Rita" />
-                                <img className='imgTop' src={Photo2} alt="yo Y Rita" />
+                                <img className='imgBottom' src={Photo1} alt="yo Y Rita" />
+                                <img className='imgTop' src={Photo4} alt="yo Y Rita" />
                             </figure>
                             <div className={isDarkTheme ? "dark-divider" : "divider"}></div>
                             <p className={isDarkTheme ? "dark-p" : ""}>While I’m studying, I participated in some real projects where I apply all that knowledge and learn to work with agile methodologies like SCRUM.</p>
@@ -38,7 +38,7 @@ const Profile = () => {
                         </div>
                     </section>
                     :
-                    <section className={isDarkTheme ? "dark-section" : "section"}>
+                    <section className={isDarkTheme ? "scroll-content fadeBottom dark-section" : "scroll-content fadeBottom"}>
                         <h2 id="profile" className={isDarkTheme ? "dark-title" : ""}>Perfil</h2>
                         <div className="title-divider"></div>
                         <p className={isDarkTheme ? "dark-profile-intro" : "profile-intro"}>Hola! Soy Hector Muñoz, y <span style={{ textDecoration: "underline" }}>Estoy listo para los retos.</span> </p>

@@ -24,7 +24,7 @@ const Contact = () => {
     }
 
     return (
-        <section className={isDarkTheme ? "dark-section" : ""}>
+        <section className={isDarkTheme ? "dark-section scroll-content fadeBottom" : "scroll-content fadeBottom"}>
             {
                 isEnglishText ?
                     <h2 id="contact">Contact me</h2>

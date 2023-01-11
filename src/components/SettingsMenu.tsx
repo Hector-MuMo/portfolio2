@@ -8,13 +8,13 @@ const SettingsMenu = () => {
     return (
         <div className='settingsMenu-cotainer'>
             <div className='settingButton-container' onClick={handleChangeLanguage}>
-                <BsTranslate className={isDarkTheme ? 'dark-theme-icon' : "light-theme-icon"} />
+                <BsTranslate /* className={isDarkTheme ? 'dark-theme-icon' : "light-theme-icon"}  */ style={{ fontSize: "25px", color: "#0B9DF5", cursor: "pointer" }} />
             </div>
             <div className='settingButton-container' onClick={handleChangeTheme} >
                 {isDarkTheme ?
-                    <BsSunFill className={isDarkTheme ? 'dark-theme-icon' : "light-theme-icon"} />
+                    <BsSunFill /* className={isDarkTheme ? 'dark-theme-icon' : "light-theme-icon"}  */ style={{ fontSize: "25px", color: "yellow", cursor: "pointer" }} />
                     :
-                    <BsFillMoonStarsFill className={isDarkTheme ? 'dark-theme-icon' : "light-theme-icon"} />
+                    <BsFillMoonStarsFill /* className={isDarkTheme ? 'dark-theme-icon' : "light-theme-icon"} */ style={{ border: "", fontSize: "25px", color: "#D1D1CC", cursor: "pointer" }} />
                 }
             </div>
         </div>
