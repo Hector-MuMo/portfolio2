@@ -6,7 +6,7 @@ const Portfolio = () => {
     const { isDarkTheme, isEnglishText } = useContext(StateContext)
 
     return (
-        <section className={isDarkTheme ? "dark-section" : ""}>
+        <section className={isDarkTheme ? "dark-section scroll-content fadeBottom" : "scroll-content fadeBottom"}>
             {
                 isEnglishText ?
                     <h2 id="portfolio" className={isDarkTheme ? "dark-title" : ""}>Portfolio</h2>

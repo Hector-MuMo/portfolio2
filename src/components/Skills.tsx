@@ -29,7 +29,7 @@ const Skills = () => {
         <>
             {
                 isEnglishText ?
-                    <section className={isDarkTheme ? "dark-section" : ""}>
+                    <section className={isDarkTheme ? "dark-section scroll-content fadeBottom" : "scroll-content fadeBottom"}>
                         <h2 id="skills" className={isDarkTheme ? "dark-title" : ""}>Dev Skills</h2>
                         <div className='title-divider'></div>
                         <div className='skills-container'>
@@ -76,7 +76,7 @@ const Skills = () => {
                         </div>
                     </section>
                     :
-                    <section className={isDarkTheme ? "dark-section" : ""}>
+                    <section className={isDarkTheme ? "dark-section scroll-content fadeBottom" : "scroll-content fadeBottom"}>
                         <h2 id="skills" className={isDarkTheme ? "dark-title" : ""}>Habilidades de Desarrollo</h2>
                         <div className='title-divider'></div>
                         <div className='skills-container'>

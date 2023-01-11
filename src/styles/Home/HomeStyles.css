@@ -38,6 +38,12 @@
   height: 350px;
 }
 
+.typewriter-container p {
+  font-size: 32px;
+  color: #ffffff;
+  text-shadow: #2E7B78 2px 0 30px;
+}
+
 .typewrite-styles {
   font-size: 32px;
   color: #ffffff;

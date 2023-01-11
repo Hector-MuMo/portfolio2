@@ -15,6 +15,19 @@ const Home = () => {
                 </video>
                 <div className='hero-text'>
                     <div className='typewriter-container'>
+                        {
+                            isEnglishText ?
+                                <>
+                                    <p>Welcome to my website!</p>
+                                    <p>I'm </p>
+                                </>
+                                :
+                                <>
+                                    <p>Bienvenido a mi sitio web!</p>
+                                    <p>Soy</p>
+                                </>
+
+                        }
                         <Typewriter
                             options={{
                                 strings: ["Web Developer", "Front-End Developer", "Back-End Developer"],

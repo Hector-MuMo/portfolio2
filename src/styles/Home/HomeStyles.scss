@@ -30,6 +30,12 @@
 .typewriter-container {
     margin-top: 50px;
     height: 350px;
+
+    p {
+        font-size: $h1-header;
+        color: $white;
+        text-shadow: $tl-main-dark 2px 0 30px;
+    }
 }
 
 .typewrite-styles {
