@@ -1,17 +1,29 @@
 //Colors
+//gray scale
 $white: #ffffff;
-$dark: #000000;
-$ligth-grey: #B5B5B5;
-$grey: #666666;
-$ligth-dark: #3C3C3C;
-$tl-main-ligth: #77CCC8;
-$tl-main: #43B3AE;
-$tl-main-dark: #2E7B78;
+$dark: #222222;
+$ligth-grey: #f0eef0;
+$grey: #b5b3b5;
+$ligth-dark: #3a3a3a;
+//Light theme
+$tl-main-ligth: #8fe6b8;
+$tl-main: #5bc6a9;
+$tl-main-dark: #006666;
+$tl-contrast: #6840ce;
+//Dark Theme
 $td-main-light: #D18487;
 $td-main: #BC4C51;
 $td-main-dark: #883337;
+$td-contrast: #0033cc;
+
+
+
+
 
 //Font-sizes
+$exx-large-header: 70px;
+$ex-large-header: 60px;
+$large-header: 45px;
 $h1-header: 32px;
 $h2-header: 24px;
 $h3-header: 18px;

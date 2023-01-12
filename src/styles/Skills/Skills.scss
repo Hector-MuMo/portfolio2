@@ -156,6 +156,7 @@
 
 .dark-theme-text {
     color: $white;
+    text-shadow: $white 0px 0px 2px;
 }
 
 @media screen and (min-width: 800px) {

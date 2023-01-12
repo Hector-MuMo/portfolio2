@@ -35,6 +35,7 @@
 
 .dark-theme-text {
     color: $white;
+    text-shadow: $white 0px 0px 2px;
 }
 
 .light-a {
@@ -49,6 +50,7 @@
     text-align: center;
     padding: 20px;
     color: $tl-main-dark;
+    text-shadow: $tl-main-dark 0px 0px 2px;
 }
 
 @media screen and (min-width: 1440px) {}

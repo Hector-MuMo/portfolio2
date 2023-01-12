@@ -4,9 +4,9 @@ import { StateContext } from '../App'
 const NavBar = () => {
     const { isDarkTheme, isEnglishText } = useContext(StateContext)
     return (
-        <div className='navBar-container' style={isDarkTheme ? { backgroundColor: "#883337" } : {}}>
+        <div className={isDarkTheme ? 'dark-navBar-container' : 'navBar-container'}>
             <div className='logo-container'></div>
-            <div className='menu-container'>
+            <div className={isDarkTheme ? 'dark-menu-container' : 'menu-container'}>
                 {
                     isEnglishText ?
                         <ul>

@@ -1,7 +1,6 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import "../styles/Home/HomeStyles.css"
 import Typewriter from 'typewriter-effect';
-import video from "../images/Abstract.mp4"
 import { StateContext } from '../App';
 
 const Home = () => {
@@ -10,38 +9,37 @@ const Home = () => {
     return (
         <div style={{ height: "100vh", overflow: "hidden" }} >
             <div className='hero-container'>
-                <video className='hero-video' autoPlay loop muted>
-                    <source src={video} type='video/mp4' />
-                </video>
                 <div className='hero-text'>
-                    <div className='typewriter-container'>
+                    <div className={isDarkTheme ? 'dark-main-title-container' : 'main-title-container'}>
                         {
                             isEnglishText ?
                                 <>
-                                    <p>Welcome to my website!</p>
-                                    <p>I'm </p>
+                                    <p>WELCOME TO MY SPACE AS</p>
                                 </>
                                 :
                                 <>
-                                    <p>Bienvenido a mi sitio web!</p>
-                                    <p>Soy</p>
+                                    <p>BIENVENIDO A MI ESPACIO COMO </p>
                                 </>
-
                         }
-                        <Typewriter
-                            options={{
-                                strings: ["Web Developer", "Front-End Developer", "Back-End Developer"],
-                                autoStart: true,
-                                loop: true,
-                                wrapperClassName: "typewrite-styles",
-                                cursorClassName: "cursor-typewrite-style"
-                            }}
-                        />
+                        <p className='webDev-title'>WEB DEVELOPER</p>
+                        <div className='typewrite-container'>
+                            <span>{`${"<"}`}</span>
+                            <Typewriter
+                                options={{
+                                    strings: ["Front-End ", "Back-End"],
+                                    autoStart: true,
+                                    loop: true,
+                                    wrapperClassName: "typewrite-styles",
+                                    cursorClassName: "cursor-typewrite-style"
+                                }}
+                            />
+                            <span>{`${">"}`}</span>
+                        </div>
                     </div>
                     {isEnglishText ?
-                        <button className={isDarkTheme ? "dark-button" : ""}><a href="#profile">Profile</a></button>
+                        <button className={isDarkTheme ? "dark-button" : ""}><a href="#profile">About me</a></button>
                         :
-                        <button className={isDarkTheme ? "dark-button" : ""}><a href="#profile">Perfil</a></button>
+                        <button className={isDarkTheme ? "dark-button" : ""}><a href="#profile">Conoceme</a></button>
                     }
                 </div>
             </div>
