@@ -4,6 +4,6 @@ import Home from '../components/Home';
 
 test("check start project string", () => {
     render(<Home />)
-    const text = screen.getByText("Perfil")
+    const text = screen.getByText("Conoceme")
     expect(text).toBeInTheDocument()
 })
