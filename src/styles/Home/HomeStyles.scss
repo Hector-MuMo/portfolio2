@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .hero-video {
@@ -27,34 +28,180 @@
     text-align: center;
 }
 
-.typewriter-container {
-    margin-top: 50px;
+.main-title-container {
+    min-width: 200px;
+    max-width: 400px;
     height: 350px;
 
-    p {
-        font-size: $h1-header;
-        color: $white;
-        text-shadow: $tl-main-dark 2px 0 30px;
+    span {
+        font-size: $large-header;
+        color: $tl-main-dark;
+        text-shadow: $tl-main-dark 2px 2px 5px;
     }
+
+    p {
+        font-size: $large-header;
+        font-weight: 700;
+        color: $tl-main;
+        text-shadow: $tl-main 2px 2px 5px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0px;
+        text-size-adjust: 0;
+    }
+
+    .webDev-title {
+        font-size: $large-header;
+        font-weight: 700;
+        color: $tl-contrast;
+        text-shadow: $tl-contrast 2px 2px 5px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0px;
+    }
+}
+
+.dark-main-title-container {
+    min-width: 200px;
+    max-width: 400px;
+    height: 350px;
+
+    span {
+        font-size: $large-header;
+        color: $td-main-dark;
+        text-shadow: $td-main-dark 0px 0px 5px;
+    }
+
+    p {
+        font-size: $large-header;
+        font-weight: 700;
+        color: $td-main;
+        text-shadow: $td-main 0px 0px 5px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0px;
+        text-size-adjust: 0;
+    }
+
+    .webDev-title {
+        font-size: $large-header;
+        font-weight: 700;
+        color: $td-contrast;
+        text-shadow: $td-contrast 0px 0px 5px;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0px;
+    }
+}
+
+.typewrite-container {
+    display: flex;
+    justify-content: center;
 }
 
 .typewrite-styles {
     font-size: $h1-header;
-    color: $white;
-    text-shadow: $tl-main-dark 2px 0 30px;
+    color: $tl-main-dark;
+    text-shadow: $tl-main-dark 0px 0 10px;
 }
 
 .cursor-typewrite-style {
     font-size: $h1-header;
-    color: $white;
+    color: $tl-main-dark;
 }
 
 .hero-text>button {
     margin-top: 80px;
-    box-shadow: 0px 0px 30px $tl-main-dark;
+    box-shadow: 0px 0px 10px $tl-contrast;
+}
+
+.hero-text>.dark-button {
+    background-color: $td-main-dark;
+    box-shadow: 0px 0px 10px $td-main-dark;
 }
 
 .hero-text>button a {
     color: $white;
     text-decoration: none;
+}
+
+@media screen and (min-width: 610px) {
+    .main-title-container {
+
+        span {
+            font-size: $ex-large-header;
+        }
+
+        p {
+            font-size: $ex-large-header;
+            font-weight: 700;
+
+        }
+
+        .webDev-title {
+            font-size: $ex-large-header;
+        }
+    }
+
+    .dark-main-title-container {
+
+        span {
+            font-size: $ex-large-header;
+        }
+
+        p {
+            font-size: $ex-large-header;
+            font-weight: 700;
+
+        }
+
+        .webDev-title {
+            font-size: $ex-large-header;
+        }
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .hero-text {
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -10%);
+    }
+
+    .main-title-container {
+        margin-top: 50px;
+
+        span {
+            font-size: $exx-large-header;
+        }
+
+        p {
+            font-size: $exx-large-header;
+            font-weight: 700;
+
+        }
+
+        .webDev-title {
+            font-size: $exx-large-header;
+        }
+    }
+
+    .dark-main-title-container {
+        margin-top: 50px;
+
+        span {
+            font-size: $exx-large-header;
+        }
+
+        p {
+            font-size: $exx-large-header;
+            font-weight: 700;
+
+        }
+
+        .webDev-title {
+            font-size: $exx-large-header;
+        }
+    }
 }

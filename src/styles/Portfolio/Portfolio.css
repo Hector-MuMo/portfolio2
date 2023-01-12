@@ -3,7 +3,7 @@
   padding: 30px 20px;
   width: 80%;
   height: auto;
-  border: 3px solid #2E7B78;
+  border: 3px solid #006666;
   border-radius: 50px 0 50px 0;
 }
 
@@ -36,6 +36,7 @@
 
 .dark-theme-text {
   color: #ffffff;
+  text-shadow: #ffffff 0px 0px 2px;
 }
 
 .light-a {
@@ -49,6 +50,7 @@
   text-decoration: none;
   text-align: center;
   padding: 20px;
-  color: #2E7B78;
+  color: #006666;
+  text-shadow: #006666 0px 0px 2px;
 }
 /*# sourceMappingURL=Portfolio.css.map */

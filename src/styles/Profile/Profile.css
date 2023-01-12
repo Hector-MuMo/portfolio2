@@ -15,6 +15,7 @@
 
 .dark-title {
   color: #883337;
+  text-shadow: #883337 0px 0px 2px;
 }
 
 .fading {
@@ -72,6 +73,7 @@
 
 .dark-p {
   color: #ffffff;
+  text-shadow: #ffffff 0px 0px 3px;
   width: 80%;
   margin: 5px 0;
   text-align: justify;
@@ -85,6 +87,7 @@
 
 .dark-profile-intro {
   color: #ffffff;
+  text-shadow: #ffffff 0px 0px 3px;
   text-align: center;
   margin: 20px 0;
   font-size: 18px;

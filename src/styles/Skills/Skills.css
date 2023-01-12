@@ -162,6 +162,7 @@
 
 .dark-theme-text {
   color: #ffffff;
+  text-shadow: #ffffff 0px 0px 2px;
 }
 
 @media screen and (min-width: 800px) {
