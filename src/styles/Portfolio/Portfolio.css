@@ -53,4 +53,11 @@
   color: #006666;
   text-shadow: #006666 0px 0px 2px;
 }
+
+@media screen and (min-width: 1024px) {
+  .slider-container,
+  .dark-slider-container {
+    width: 600px;
+  }
+}
 /*# sourceMappingURL=Portfolio.css.map */

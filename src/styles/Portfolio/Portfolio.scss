@@ -53,4 +53,10 @@
     text-shadow: $tl-main-dark 0px 0px 2px;
 }
 
-@media screen and (min-width: 1440px) {}
+@media screen and (min-width: 1024px) {
+
+    .slider-container,
+    .dark-slider-container {
+        width: 600px;
+    }
+}
