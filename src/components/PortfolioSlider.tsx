@@ -9,6 +9,7 @@ import pokedex from "../images/Pokedex-react.png"
 import trivia from "../images/Triviando-vanilla.png"
 import quotes from "../images/Quotes-react.png"
 import rm from "../images/rmApp.png"
+import astro from "../images/astro.png"
 
 const PrevArrow = (props: any) => {
     const { className, style, onClick } = props;
@@ -84,6 +85,18 @@ const PortfolioSlider = () => {
                         </div>
                         <div>
                             <figure className='slider-img'>
+                                <img src={astro} alt="" />
+                            </figure>
+                            <p style={{ textAlign: "justify", padding: "20px" }} className={isDarkTheme ? "dark-theme-text" : ""}>
+                                Try this app to know some interesting information about your horoscope.
+                                This project was made with ReactJs, Typescript and SASS.
+                            </p>
+                            <a href="https://aztroapp.netlify.app" target="_blank" rel="noreferrer" className={isDarkTheme ? "dark-a" : "light-a"}>
+                                Check Project
+                            </a>
+                        </div>
+                        <div>
+                            <figure className='slider-img'>
                                 <img src={trivia} alt="" />
                             </figure>
                             <p style={{ textAlign: "justify", padding: "20px" }} className={isDarkTheme ? "dark-theme-text" : ""}>
@@ -143,7 +156,18 @@ const PortfolioSlider = () => {
                                 Revisa el proyecto
                             </a>
                         </div>
-
+                        <div>
+                            <figure className='slider-img'>
+                                <img src={astro} alt="" />
+                            </figure>
+                            <p style={{ textAlign: "justify", padding: "20px" }} className={isDarkTheme ? "dark-theme-text" : ""}>
+                                Prueba esta app para conocer información interesante acerca de tu horoscopo.
+                                Este proyecto fue hecho con ReactJS, Typescript y SASS.
+                            </p>
+                            <a href="https://aztroapp.netlify.app" target="_blank" rel="noreferrer" className={isDarkTheme ? "dark-a" : "light-a"}>
+                                Revisa el proyecto
+                            </a>
+                        </div>
                         <div>
                             <figure className='slider-img'>
                                 <img src={trivia} alt="" />
